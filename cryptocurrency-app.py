@@ -1,13 +1,9 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import requests
 import plotly.express as px
-import plotly.graph_objs as go
-import base64
-import time
+
 
 # Get data
 def get_crypto_data(current_price):
@@ -25,7 +21,7 @@ def get_crypto_data(current_price):
 
 # Streamlit configuration
 st.set_page_config(layout="wide")
-st.image("python/streamlit/cryptocurrency_EDA/images.jpeg", width=500)
+st.image("images .jpeg", width=800)
 st.title("Crypto Price App")
 st.markdown("This app shows the prices of the top 100 cryptocurrencies.")
 
