@@ -34,7 +34,6 @@ current_price = col1.selectbox('Select currency for price', ('usd', 'btc', 'inr'
 
 # Load the dataframe
 df = get_crypto_data(current_price)
-images = df["image"]
 df = df.drop(columns=["image"])
 
 sorted_coins = sorted(df['name'])
